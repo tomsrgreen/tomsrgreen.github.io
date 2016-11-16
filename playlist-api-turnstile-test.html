@@ -1,4 +1,4 @@
-<div id="wistia_cmpw0ss7qf" class="wistia_embed" style="width:640px;height:360px;" data-video-width="640" data-video-height="360">&nbsp;</div>
+​<div id="wistia_cmpw0ss7qf" class="wistia_embed" style="width:640px;height:360px;" data-video-width="640" data-video-height="360"> </div>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/playlist-v1.js"></script>
 <script>
 wistiaPlaylist = Wistia.playlist("cmpw0ss7qf", {
@@ -14,33 +14,12 @@ wistiaPlaylist = Wistia.playlist("cmpw0ss7qf", {
     autoPlay: false,
     controlsVisibleOnLoad: false
   },
-});
-</script>
-<script>
-videoPresentation = Wistia.playlist("cmpw0ss7qf", {
-version: "v1",
-theme: "bare",
-videoFoam: true,
-autoAdvance: true,
-videoOptions: {
-volumeControl: false,
-volume: 0,
-playbar: false,
-playButton: false,
-theme: "bare",
-playerPreference: "html5"
-},
-});
-videoPresentation.bind('beforeembed', function (sectionIndex, videoIndex) {
-videoPresentation.push({"ot2": {
-plugin: {
-"requireEmail-v1": {
-topText: "Please enter your email below.",
-bottomText: "We may use this email to contact you about the product, but we won't be too pushy.",
-time: 30,
-askName: true
-}
-}
-}});
+  plugin: {
+    "requireEmail-v1": {
+      topText: "Enter your email address\nto view this video.",
+      videoIndex: 1,
+      time: 30
+    }
+  }
 });
 </script>
