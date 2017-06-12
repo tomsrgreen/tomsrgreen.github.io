@@ -1,9 +1,9 @@
 <script src="https://fast.wistia.com/embed/medias/6dk6u4860a.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_6dk6u4860a videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
-<script>wistiaEmbed = Wistia.embed("6dk6u4860a", {
-  plugin: {
-    resumable: {
-      src: "//fast.wistia.com/labs/resumable/plugin.js",
-      async: false
-    }
-  }
-});</script>
+<script src="//fast.wistia.com/assets/external/embed_shepherd-v1.js"></script>
+<script>
+wistiaEmbeds.onFind(function(video) {
+  video.addPlugin("resumable", {
+    src: "//fast.wistia.com/labs/resumable/plugin.js"
+  });
+});
+</script>
